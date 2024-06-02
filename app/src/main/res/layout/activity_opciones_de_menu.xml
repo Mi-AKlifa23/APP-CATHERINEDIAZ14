@@ -1,10 +1,58 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".opciones_de_menu">
+    android:background="#FFF176"
+    android:padding="50dp"
+    tools:context=".MainActivity">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/btnBotonUno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTextoUno"
+        android:background="#0019FF"
+        android:text="Boton 1"/>
+
+    <Button
+        android:id="@+id/btnBotonDos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvTextoUno"
+        android:layout_alignParentRight="true"
+        android:text="Boton 2"/>
+
+    <Button
+        android:id="@+id/btnBotonTres"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnBotonDos"
+        android:text="Boton 3"/>
+
+    <TextView
+        android:id="@+id/tvTextoUno"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:text="Hola mundo"
+        android:textSize="25sp"
+        android:textColor="@color/textColor" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_below="@id/tvTextoUno"
+        android:layout_toEndOf="@id/btnBotonUno"
+        android:layout_toStartOf="@id/btnBotonDos"
+        android:text="Hola Sistemas"
+        android:textColor="@color/white" />
+
+</RelativeLayout>
